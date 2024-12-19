@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7_3_CSS - empty-cells</title>
+
+    <style type="text/css">
+        table {
+            background-color: beige;
+            border-spacing: 10px;
+            border: 1px solid black;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            background-color: aquamarine
+        }
+
+        .hide {
+            empty-cells: hide;
+        }
+
+        .show {
+            empty-cells: show;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table class="show">
+        <tr>
+            <td></td>
+            <td>Copas</td>
+        </tr>
+        <tr>
+            <td>Bastos</td>
+            <td>Espadas</td>
+        </tr>
+        <tr>
+            <td>Oros</td>
+            <td></td>
+        </tr>
+    </table>
+    <p></p>
+    <table class="hide">
+        <tr>
+            <td></td>
+            <td>Copas</td>
+        </tr>
+        <tr>
+            <td>Bastos</td>
+            <td>Espadas</td>
+        </tr>
+        <tr>
+            <td>Oros</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
